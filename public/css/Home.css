@@ -1,0 +1,242 @@
+﻿@import 'Nav.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    padding:0;
+    margin:0;
+}
+body {
+    background-image: url("../images/backgrounds/Mountins-dark.png");
+    background-color: #000;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow-y:hidden;
+}
+
+.wrapper {
+    padding-top: 8.5vh;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+
+/*CONTENT-CONTAINER*/
+#content-container {
+    background: #fff;
+    border-radius: 1vw;
+    margin-top: 1vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+    height:88vh;
+    overflow-y: scroll;
+}
+#content-container::-webkit-scrollbar {
+    width: 0;
+}
+
+/*MARKET SECTIONS*/
+
+.market-sections{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+}
+.market-section {
+    width: 20vw;
+    height: 15vw;
+    border-radius: 0.5vw;
+    padding: 1vw;
+    position: relative;
+}
+
+.gradient{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:50%;
+    border-radius:0.5vw;
+    padding:1vw;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));
+}
+
+.market-section:nth-child(1) {
+    background-color:#82bf2a;
+}
+.market-section:nth-child(2) {
+    background-color:#3b89cb;
+}
+.market-section:nth-child(3) {
+    background-color:#e6d51e;
+}
+.market-section-title,
+.product-category-title {
+    height: 100%;
+    display: flex;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    color: #fff;
+    align-items: flex-end;
+}
+.market-section-content {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 4vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #0f2130;
+    line-height: 2.5vw;
+    border-radius: 0.5vw;
+}
+.market-section:nth-child(1) .market-section-content h1{
+    font-weight: 800;
+    font-size: 2vw;
+    letter-spacing: 0vw;
+}
+.market-section:nth-child(1) .market-section-content h2 {
+    letter-spacing:0.2vw;
+    font-weight:600;
+    font-size:2.3vw;
+}
+.market-section:nth-child(1) .market-section-content h3 {
+    letter-spacing: 0.8vw;
+    font-weight: 800;
+    font-size: 3.7vw;
+    color: #fff;
+    line-height: 3.2vw;
+}
+
+.market-section:nth-child(2) .market-section-content h1 {
+    font-weight: 800;
+    font-size: 3.6vw;
+    letter-spacing: 0.8vw;
+    color: #fff;
+    color: #fff;
+    line-height: 3.2vw;
+}
+
+.market-section:nth-child(2) .market-section-content h2 {
+    letter-spacing: 0.2vw;
+    font-weight: 600;
+    font-size: 2.5vw;
+}
+
+.market-section:nth-child(2) .market-section-content h3 {
+    letter-spacing: 0vw;
+    font-weight: 700;
+    font-size: 2vw;
+}
+
+.market-section:nth-child(3) .market-section-content h1 {
+    font-weight: 600;
+    font-size: 3.2vw;
+    letter-spacing: 0.3vw;
+}
+
+.market-section:nth-child(3) .market-section-content h2 {
+    letter-spacing: 0vw;
+    font-weight: 800;
+    font-size: 1.8vw;
+    color: #fff;
+}
+
+.market-section:nth-child(3) .market-section-content h3 {
+    letter-spacing: 0.5vw;
+    font-weight: 700;
+    font-size: 3.6vw;
+}
+
+/*PRODUCT-CATEGORIES*/
+
+.product-categories {
+    padding-top:5vh;
+    display: flex;
+    width: 100%;
+    grid-gap:1vh 1vw;
+    flex-wrap:wrap;
+    position:relative;
+    justify-content:space-between;
+}
+
+.product-category {
+    position: relative;
+    width: 30%;
+    height: 25vh;
+    padding-top: 24%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.5vw;
+}
+.product-category-title{
+    text-transform:capitalize;
+    font-weight:500;
+}
+.product-category:nth-child(6n+1) {
+    background-color: #3b89cb;
+}
+.product-category:nth-child(6n+2){
+    background-color:#82bf2a;
+}
+.product-category:nth-child(6n+3){
+    background-color:#e6d51e;
+}
+.product-category:nth-child(6n+4){
+   
+    background-color:#e6d51e;
+}
+.product-category:nth-child(6n+5){
+    
+     background-color:#3b89cb;
+}
+.product-category:nth-child(6n){
+    background-color:#82bf2a;
+}
+
+.product-category:nth-child(1){
+    background-image:url(../images/categories/category-backpack.jpg);
+}
+
+.product-category:nth-child(2) {
+    background-image: url(../images/categories/category-belt-bag.jpg);
+}
+.product-category:nth-child(3) {
+    background-image: url(../images/categories/category-men-bag.jpg);
+}
+
+.product-category:nth-child(4) {
+    background-image: url(../images/categories/category-sport-bag.jpg);
+}
+.product-category:nth-child(5) {
+    background-image: url(../images/categories/category-women-bag.jpg);
+}
+.product-category:nth-child(6) {
+    background-image: url(../images/categories/category-case.jpg);
+}
+.product-category:nth-child(7) {
+    background-image: url(../images/categories/category-shoper.jpg);
+}
+.product-category:nth-child(8) {
+    background-image: url(../images/categories/category-kids-bag.jpg);
+}
+.product-category:nth-child(9) {
+    background-image: url(../images/categories/category-other.jpg);
+}
+
